@@ -221,6 +221,18 @@ export async function updateProfile(userId: string, input: Partial<Profile>): Pr
   return data;
 }
 
+export async function updateUserRole(userId: string, role: Profile['role']): Promise<Profile> {
+  const { data, error } = await supabase
+    .from('profiles')
+    .update({ role, updated_at: new Date().toISOString() })
+    .eq('user_id', userId)
+    .select()
+    .single();
+  
+  if (error) throw error;
+  return data;
+}
+
 // ═══════════════════════════════════════════════════════════════════════════
 // Statistics
 // ═══════════════════════════════════════════════════════════════════════════

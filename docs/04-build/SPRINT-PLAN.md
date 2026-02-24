@@ -153,22 +153,22 @@ Milestones:
 | Day | Task | Hours | Owner | Status |
 |-----|------|-------|-------|--------|
 | **Day 1** | | | | |
-| | Tree zoom & pan | 2h | @fullstack | ⬜ |
-| | Tree node click → detail panel | 1h | @fullstack | ⬜ |
-| | Collapse/expand branches | 2h | @fullstack | ⬜ |
+| | Tree zoom & pan | 2h | @fullstack | ✅ |
+| | Tree node click → detail panel | 1h | @fullstack | ✅ |
+| | Collapse/expand branches | 2h | @fullstack | ✅ |
 | **Day 2** | | | | |
-| | Ancestor view filter | 1.5h | @fullstack | ⬜ |
-| | Descendant view filter | 1.5h | @fullstack | ⬜ |
-| | Tree minimap | 1h | @fullstack | ⬜ |
-| | Tree controls (zoom buttons) | 1h | @fullstack | ⬜ |
+| | Ancestor view filter | 1.5h | @fullstack | ✅ |
+| | Descendant view filter | 1.5h | @fullstack | ✅ |
+| | Tree minimap | 1h | @fullstack | ✅ |
+| | Tree controls (zoom buttons) | 1h | @fullstack | ✅ |
 | **Day 3** | | | | |
-| | Admin panel - dashboard | 2h | @fullstack | ⬜ |
-| | User management page | 2h | @fullstack | ⬜ |
-| | Role assignment (admin/viewer) | 1h | @fullstack | ⬜ |
+| | Admin panel - dashboard | 2h | @fullstack | ✅ |
+| | User management page | 2h | @fullstack | ✅ |
+| | Role assignment (admin/viewer) | 1h | @fullstack | ✅ |
 | **Day 4** | | | | |
-| | Homepage with stats | 2h | @fullstack | ⬜ |
-| | Feature cards (navigation) | 1h | @fullstack | ⬜ |
-| | Mobile tree view optimization | 2h | @fullstack | ⬜ |
+| | Homepage with stats | 2h | @fullstack | ✅ |
+| | Feature cards (navigation) | 1h | @fullstack | ✅ |
+| | Mobile tree view optimization | 2h | @fullstack | ✅ |
 | **Day 5** | | | | |
 | | Production deploy | 1h | @fullstack | ⬜ |
 | | Performance testing | 1h | @fullstack | ⬜ |
@@ -177,11 +177,11 @@ Milestones:
 
 ### Deliverables
 
-- [ ] Interactive tree with zoom/pan
-- [ ] Collapse/expand working
-- [ ] Ancestor/descendant views
-- [ ] Admin panel functional
-- [ ] Homepage with stats
+- [x] Interactive tree with zoom/pan
+- [x] Collapse/expand working
+- [x] Ancestor/descendant views
+- [x] Admin panel functional
+- [x] Homepage with stats
 - [ ] Production deployed
 
 ### Exit Criteria
