@@ -316,7 +316,63 @@ status: approved
 
 ---
 
-## 9. Approval
+## 9. Competitive Analysis (gen3.vn)
+
+> **Source:** gen3.vn research (2026-02-24)
+> **Purpose:** Feature benchmark for roadmap planning
+
+### 9.1 Feature Comparison
+
+| Feature | AncestorTree | gen3.vn | Gap |
+|---------|:------------:|:-------:|:---:|
+| **Core** | | | |
+| Quản lý thành viên (CRUD) | ✅ Sprint 2 | ✅ | - |
+| Cây gia phả interactive | ✅ Sprint 3 | ✅ | - |
+| Tìm kiếm, lọc đời/chi/tên | ✅ Sprint 2 | ✅ | - |
+| Auth (Admin/Viewer) | ✅ Sprint 1 | ✅ | - |
+| Mobile responsive | ✅ Sprint 3 | ✅ | - |
+| Song lịch Âm-Dương | ✅ Sprint 4 | ✅ | - |
+| Thông báo ngày giỗ | ✅ Sprint 4 | ✅ | - |
+| **Extended** | | | |
+| Quản lý tin tức, sự kiện | ⬜ Backlog | ✅ | **New** |
+| Thông báo qua social/messaging | ⬜ Backlog | ✅ | **New** |
+| Subscription Management | ⬜ N/A | ✅ | N/A (OSS) |
+| Custom domain (clan.gen3.vn) | ⬜ N/A | ✅ | N/A (OSS) |
+| **Upcoming (gen3.vn Mar 2026)** | | | |
+| BOT/Crawler nhập liệu | ⬜ Backlog | 🔄 In progress | **New** |
+| Import từ nền tảng khác | ⬜ P2 (GEDCOM) | 🔄 In progress | Partial |
+| **Future (gen3.vn May-Jun 2026)** | | | |
+| Quản lý quỹ họ | ⬜ Backlog | 📌 Planned | **New** |
+| Sách gia phả/Export/In ấn | ⬜ Sprint 5 | 📌 Planned | - |
+| Virtual Tour (nhà thờ, lăng mộ) | ⬜ Backlog | 📌 Planned | **New** |
+| Native mobile app | ⬜ Backlog | 📌 Planned | **New** |
+| Cross-clan connection | ⬜ Backlog | 📌 Planned | **New** |
+
+### 9.2 New Features to Consider (Post-MVP)
+
+| ID | Feature | Priority | Notes |
+|----|---------|----------|-------|
+| **FR-1101** | Quản lý tin tức/sự kiện dòng họ | P2 | News, announcements, events |
+| **FR-1102** | Thông báo qua Zalo/Telegram/Email | P2 | Integration với messaging platforms |
+| **FR-1103** | Quản lý quỹ họ | P2 | Contributions, expenses tracking |
+| **FR-1104** | BOT hỗ trợ nhập liệu | P3 | AI-assisted data entry |
+| **FR-1105** | Virtual Tour 360° | P3 | Nhà thờ, lăng mộ, địa điểm lịch sử |
+| **FR-1106** | Native mobile apps | P3 | iOS/Android native apps |
+| **FR-1107** | Cross-clan connection | P3 | Liên kết giữa các dòng họ |
+
+### 9.3 Differentiation Strategy
+
+| Aspect | gen3.vn | AncestorTree |
+|--------|---------|--------------|
+| **Model** | SaaS (subscription) | Open Source (MIT) |
+| **Target** | Commercial | Community/Self-hosted |
+| **Hosting** | Managed | Self-hosted or Vercel |
+| **Customization** | Limited | Full source access |
+| **Cost** | Paid tiers | Free (infra costs only) |
+
+---
+
+## 10. Approval
 
 | Role | Name | Date | Signature |
 |------|------|------|-----------|
