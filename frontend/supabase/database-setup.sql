@@ -306,7 +306,7 @@ CREATE POLICY "Admins can update contributions" ON contributions
 CREATE OR REPLACE FUNCTION handle_new_user()
 RETURNS TRIGGER AS $$
 BEGIN
-    INSERT INTO profiles (user_id, email, full_name, role)
+    INSERT INTO public.profiles (user_id, email, full_name, role)
     VALUES (
         NEW.id,
         NEW.email,
@@ -327,22 +327,22 @@ CREATE TRIGGER on_auth_user_created
 -- ═══════════════════════════════════════════════════════════════════════════
 
 -- Uncomment to add sample data
-/*
-INSERT INTO people (handle, display_name, surname, first_name, gender, generation, chi, birth_year, is_living, is_patrilineal) VALUES
-('P001', 'Đặng Văn Thủy Tổ', 'Đặng', 'Thủy Tổ', 1, 1, 1, 1850, false, true),
-('P002', 'Nguyễn Thị A', 'Nguyễn', 'A', 2, 1, 1, 1855, false, false),
-('P003', 'Đặng Văn B', 'Đặng', 'B', 1, 2, 1, 1880, false, true),
-('P004', 'Đặng Văn C', 'Đặng', 'C', 1, 2, 1, 1882, false, true),
-('P005', 'Đặng Thị D', 'Đặng', 'D', 2, 2, 1, 1885, false, true);
 
-INSERT INTO families (handle, father_id, mother_id) VALUES
-('F001', (SELECT id FROM people WHERE handle = 'P001'), (SELECT id FROM people WHERE handle = 'P002'));
+-- INSERT INTO people (handle, display_name, surname, first_name, gender, generation, chi, birth_year, is_living, is_patrilineal) VALUES
+-- ('P001', 'Đặng Văn Thủy Tổ', 'Đặng', 'Thủy Tổ', 1, 1, 1, 1850, false, true),
+-- ('P002', 'Nguyễn Thị A', 'Nguyễn', 'A', 2, 1, 1, 1855, false, false),
+-- ('P003', 'Đặng Văn B', 'Đặng', 'B', 1, 2, 1, 1880, false, true),
+-- ('P004', 'Đặng Văn C', 'Đặng', 'C', 1, 2, 1, 1882, false, true),
+-- ('P005', 'Đặng Thị D', 'Đặng', 'D', 2, 2, 1, 1885, false, true);
 
-INSERT INTO children (family_id, person_id, sort_order) VALUES
-((SELECT id FROM families WHERE handle = 'F001'), (SELECT id FROM people WHERE handle = 'P003'), 1),
-((SELECT id FROM families WHERE handle = 'F001'), (SELECT id FROM people WHERE handle = 'P004'), 2),
-((SELECT id FROM families WHERE handle = 'F001'), (SELECT id FROM people WHERE handle = 'P005'), 3);
-*/
+-- INSERT INTO families (handle, father_id, mother_id) VALUES
+-- ('F001', (SELECT id FROM people WHERE handle = 'P001'), (SELECT id FROM people WHERE handle = 'P002'));
+
+-- INSERT INTO children (family_id, person_id, sort_order) VALUES
+-- ((SELECT id FROM families WHERE handle = 'F001'), (SELECT id FROM people WHERE handle = 'P003'), 1),
+-- ((SELECT id FROM families WHERE handle = 'F001'), (SELECT id FROM people WHERE handle = 'P004'), 2),
+-- ((SELECT id FROM families WHERE handle = 'F001'), (SELECT id FROM people WHERE handle = 'P005'), 3);
+
 
 -- ═══════════════════════════════════════════════════════════════════════════
 -- Set first admin (replace with your email after signup)
